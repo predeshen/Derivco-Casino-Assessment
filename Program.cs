@@ -56,7 +56,7 @@ namespace Derivco_Casino_Assesment
 
         static void GenerateDeck()
         {
-                for(int j = 1; j < 11; j++)
+                for(int j = 2; j < 11; j++)
                 {
                     deck.Add("Diamonds - " + j);
                     deck.Add("Hearts - " + j);
@@ -64,6 +64,10 @@ namespace Derivco_Casino_Assesment
                     deck.Add("Clubs - " + j);
                     if (j == 10)
                     {
+                        deck.Add("Diamonds Ace - " + j);
+                        deck.Add("Hearts Ace - " + j);
+                        deck.Add("Spades Ace - " + j);
+                        deck.Add("Clubs Ace - " + j);
                         deck.Add("Diamonds Jack - " + 10); deck.Add("Diamonds Queen - " + 10); deck.Add("Diamonds King - " + 10);
                         deck.Add("Hearts Jack - " + 10); deck.Add("Hearts Queen - " + 10); deck.Add("Hearts King - " + 10);
                         deck.Add("Spades Jack - " + 10); deck.Add("Spades Queen - " + 10); deck.Add("Spades King - " + 10);
